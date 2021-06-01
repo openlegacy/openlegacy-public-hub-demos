@@ -19,8 +19,6 @@
 Before creating the assets please save the files from the resources folder into your module folder
 
 `ol add --protocol http:// --charset UTF-8 --timeout 30000 --t24-application CUSTOMER --gts-control 1 --company openlegacy --function I`
-`cp ../resources/test-json/customer.json ./assets/customer/test_data/case-1/in.json`
-`ol test asset customer`
 
 ## Test the assets
 

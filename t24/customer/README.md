@@ -5,7 +5,6 @@
 - OpenLegacy cli installed on your PC.
 - Java 11.
 - OpenLegacy Hub account.
-- Docker
 
 ## Create a module
 

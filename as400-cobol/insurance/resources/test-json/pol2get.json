@@ -1,0 +1,27 @@
+{
+  "policyNumIn" : "50",
+  "policyOut" : {
+    "policyRecOut" : {
+      "policyNumOut" : "",
+      "custNameOut" : "",
+      "custAddrOut" : "",
+      "custCityOut" : "",
+      "custStateOut" : "",
+      "custZipOut" : "",
+      "custPhoneOut" : "",
+      "birthDateOut" : "",
+      "createDateOut" : "",
+      "endDateOut" : "",
+      "policyTypeOut" : "",
+      "monthlyPymtOut" : 0,
+      "quarteryPymtOut" : 0,
+      "yearlyPymtOut" : 0,
+      "isActiveOut" : ""
+    },
+    "success" : "",
+    "resultSqlcodeSign" : "",
+    "resultSqlcode" : "",
+    "resultSqlstate" : "",
+    "resultSqlerrmc" : ""
+  }
+}

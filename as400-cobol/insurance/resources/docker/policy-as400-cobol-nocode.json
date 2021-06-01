@@ -1,0 +1,9 @@
+{
+    "source-provider": {
+        "type": "HUB",
+        "hub": {
+            "project-name": "policy-as400-cobol-microservice",
+            "api-key": "API_KEY"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+policy-as400-cobol:
+    image: openlegacy/as400-rpc:1.1.5
+    container_name: policy-as400-cobol
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./policy-as400-cobol-nocode.json:/app/config/config.json

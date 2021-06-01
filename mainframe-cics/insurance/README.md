@@ -22,13 +22,13 @@ Enter to the module folder.
 
 ## Create the assets
 
-Before creating the assets please save the files from the resources folder into your module folder and enter the module folder.
+Before creating the assets please save the resources folder into your module folder.
 
 - **Open Policy**  
-  ` ol add --program-path OPOLCS2 -i ..\resources\OPOLCS2.in.cpy -o ..\resources\OPOLCS2.out.cpy`
+  ` ol add --program-path OPOLCS2 -i .\resources\OPOLCS2.in.cpy -o .\resources\OPOLCS2.out.cpy`
 
 - **Get Policy**  
-  `ol add --program-path GPOLCS2 -i ..\resources\GPOLCS2.in.cpy -o ..\resources\GPOLCS2.out.cpy`
+  `ol add --program-path GPOLCS2 -i .\resources\GPOLCS2.in.cpy -o .\resources\GPOLCS2.out.cpy`
 
 
 ## Test the assets
@@ -54,13 +54,6 @@ Before creating the assets please save the files from the resources folder into 
 
 2.  Run `ol test asset gpolcs2`
 
-## Upadate Policy
-1.  Go to `policy-cics\assets\upolcs2\test_data\case-1\in.json` and replace it with the following Json:
-
-- [upolcs2 json](https://github.com/openlegacy/openlegacy-public-hub-demos/blob/master/mainframe-cics/insurance/resources/test-json/upolcs2.json)
-
-2. Run `ol test asset upolcs2`
-
 ## Push module to the Hub
 
 - `ol push module`
@@ -71,9 +64,9 @@ Before creating the assets please save the files from the resources folder into 
 
 ## Run No Code
 
-- Go to nocode JSON  [account-cics-nocode.json](./resources/docker/policy-cics-nocode.json) and update the project name and api key.
+- Go to `resources\docker` nocode JSON  [account-cics-nocode.json](./resources/docker/policy-cics-nocode.json) and update the project name and api key.
 
-- Run the docker compose file [docker-compose.yaml](./resources/docker/docker-compose.yml) using the following command: `docker-compose up -d`
+- Go to `resources\docker` and run the docker compose file [docker-compose.yaml](./resources/docker/docker-compose.yml) using the following command: `docker-compose up -d`
 
 ## Open API
 

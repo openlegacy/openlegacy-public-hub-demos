@@ -6,6 +6,8 @@
 - Java 11.
 - OpenLegacy Hub account.
 - Legacy sources from the resources folder:  
+- Docker
+- docker-compose
 [OACTCS9.cbl](./resources/OACTCS9.cbl), [GACTCS9.cbl](./resources/GACTCS9.cbl).
 
 ## Create a module
@@ -20,12 +22,12 @@ Enter to the module folder.
 
 ## Create the assets
 
-Before creating the assets please save the files from the resources folder into your module folder.
+Before creating the assets please save the resources folder into your module folder.
 
 - **Open Single Account**  
-  `ol add --source-path .\OACTCS9.cbl --program-path OACTCS9`
+  `ol add --source-path .\resources\OACTCS9.cbl --program-path OACTCS9`
 - **Get Single Account**  
-  `ol add -i ..\resources\GACTCS9I.cpy -o ..\resources\GACTCS9O.cpy --program-path GACTCS9`
+  `ol add -i .\resources\GACTCS9I.cpy -o .\resources\GACTCS9O.cpy --program-path GACTCS9`
 
 
 ## Test the assets
@@ -61,9 +63,9 @@ Before creating the assets please save the files from the resources folder into 
 
 ## Run No Code
 
-- Go to nocode JSON  [account-cics-nocode.json](./resources/docker/account-cics-nocode.json) and update the project name and api key.
+- Go to `resources\docker` nocode JSON  [account-cics-nocode.json](./resources/docker/account-cics-nocode.json) and update the project name and api key.
 
-- Run the docker compose file [docker-compose.yaml](./resources/docker/docker-compose.yml) using the following command: `docker-compose up -d`
+- Go to `resources\docker` and run the docker compose file [docker-compose.yaml](./resources/docker/docker-compose.yml) using the following command: `docker-compose up -d`
 
 ## Open API
 

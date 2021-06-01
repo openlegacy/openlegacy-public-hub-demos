@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  account-cics:
+   image: openlegacy/mainframe-cics-ts:1.1.5
+   container_name: policy-cics
+   ports:
+    - "8080:8080"
+   volumes: 
+    - ./account-cics-nocode.json:/app/config/config.json

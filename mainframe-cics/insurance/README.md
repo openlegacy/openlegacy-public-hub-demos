@@ -24,23 +24,12 @@ Enter to the module folder.
 
 Before creating the assets please save the files from the resources folder into your module folder and enter the module folder.
 
-- **Rest Policy** 
-`ol add --program-path  RPOLCS2  -i  ../resources/RPOLCS2.cpy -o ../resources/RPOLCS2.cpy`
-
-- **Get All Policies**  
- `ol add --program-path  LPOLCS2  -i  ..\resources\LPOLCS2.in.cpy -o ..\resources\LPOLCS2.out.cpy`
-
 - **Open Policy**  
   ` ol add --program-path OPOLCS2 -i ..\resources\OPOLCS2.in.cpy -o ..\resources\OPOLCS2.out.cpy`
 
 - **Get Policy**  
   `ol add --program-path GPOLCS2 -i ..\resources\GPOLCS2.in.cpy -o ..\resources\GPOLCS2.out.cpy`
 
-- **Update Policy**
-  `ol add --program-path UPOLCS2 -i ..\resources\UPOLCS2.in.cpy -o ..\resources\UPOLCS2.out.cpy`
-
-- **Delete Policy** 
-  `ol add --program-path DPOLCS2 -i ..\resources\DPOLCS2.in.cpy -o ..\resources\DPOLCS2.out.cpy`
 
 ## Test the assets
 
@@ -48,17 +37,6 @@ Before creating the assets please save the files from the resources folder into 
 > The test asset command must run from the module directory and you must be logged in to the hub.  
 > `ol login -api-key <your api key>`
 
-
-### Reset Policies
- 1. Go to `policy-cics\assets\rpolcs2\test_data\case-1\in.json` and replace it with the following Json:
-
-- [rpolcs2 json](https://github.com/openlegacy/openlegacy-public-hub-demos/blob/master/mainframe-cics/insurance/resources/test-json/rpolcs2.json)
-
-2.  Run `ol test asset rpolcs2`.
-
-### Get All Policies
-
-1.  Run `ol test asset lpolcs2`.
 
 ### Open Policy
 
@@ -83,15 +61,6 @@ Before creating the assets please save the files from the resources folder into 
 
 2. Run `ol test asset upolcs2`
 
-## Delete policy
-
-1.  Go to `policy-cics\assets\dpolcs2\test_data\case-1\in.json` and replace it with the following Json:
-
-- [dpolcs2 json](https://github.com/openlegacy/openlegacy-public-hub-demos/blob/master/mainframe-cics/insurance/resources/test-json/dpolcs2.json)
-
-2.  Run `ol test asset dpolcs2`
-
-
 ## Push module to the Hub
 
 - `ol push module`
@@ -99,3 +68,15 @@ Before creating the assets please save the files from the resources folder into 
 ## Create Hub project
 
 - `ol create project policy-cics-microservice --modules policy-cics`
+
+## Run No Code
+
+- Go to nocode JSON  [account-cics-nocode.json](./resources/docker/policy-cics-nocode.json) and update the project name and api key.
+
+- Run the docker compose file [docker-compose.yaml](./resources/docker/docker-compose.yml) using the following command: `docker-compose up -d`
+
+## Open API
+
+- Go to http://localhost:8080/openapi.
+
+- Send the request to test the api

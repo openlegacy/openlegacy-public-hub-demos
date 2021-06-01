@@ -55,9 +55,9 @@ ol test connection --driver-class-name oracle.jdbc.driver.OracleDriver --url jdb
 
 ## Run No Code
 
-- Go to `resources\docker` [policy-oracle-nocode.json](./resources/docker/account-cics-nocode.json) and update the project name and api key.
+- Go to `resources\docker` and update the [policy-oracle-nocode.json](./resources/docker/policy-oracle-nocode.json)  project name and api key.
 
-- Go to `resources\docker` and run the [docker-compose.yml](./resources/docker/docker-compose.yml) using the following command: `docker-compose up -d`
+- Go to `resources\docker` and run the [docker-compose.yml](./resources/docker/docker-compose.yml) file using the following command: `docker-compose up -d`
 
 ## Open API
 

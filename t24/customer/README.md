@@ -31,6 +31,8 @@ Before creating the assets please save the files from the resources folder into 
 
 1.  Go to `customer-t24\assets\customer\test_data\case-1\in.json` and replace it with the following Json:
 
+- [customer json](https://github.com/openlegacy/openlegacy-public-hub-demos/blob/master/t24/customer/resources/test-json/castomer.json)
+
 2.  Run `ol test asset customer`
 
 ## Push Module To The HUB

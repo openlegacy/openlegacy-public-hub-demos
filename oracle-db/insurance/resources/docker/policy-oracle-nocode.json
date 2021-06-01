@@ -1,0 +1,9 @@
+{
+    "source-provider": {
+        "type": "HUB",
+        "hub": {
+            "project-id": "policy-oracle-microservice",
+            "api-key": "API_KEY"
+        }
+    }
+}

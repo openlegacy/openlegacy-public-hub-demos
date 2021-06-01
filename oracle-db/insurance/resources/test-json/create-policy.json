@@ -1,0 +1,18 @@
+{
+     "paccountPolicyNumber" : "123-45-6789",
+     "pcustomerId" : "9876-54-321",
+     "pcustomerName" : "Jhon Smith",
+     "pcustomerAddress" : "56 Vernon Parkway",
+     "pcustomerCountry" : "US",
+     "pcustomerState" : "Florida",
+     "pcustomerZip" : "33029",
+     "pcustomerBirthDate" : "2021-01-31T12:30:48.296+0200",
+     "ppolicyEndDate" : "2021-01-31T12:30:48.297+0200",
+     "ppolicyType" : "Delta Juliett India",
+     "ptypeDescription" : "Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
+     "pmonthlyPayment" : 50000,
+     "pquarteryPayment" :100000,
+     "pyearlyPayment" : 40000,
+     "pcurrency" : "USD",
+     "plocked" : "N"
+}

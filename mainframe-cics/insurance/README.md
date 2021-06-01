@@ -64,9 +64,9 @@ Before creating the assets please save the resources folder into your module fol
 
 ## Run No Code
 
-- Go to `resources\docker` nocode JSON  [account-cics-nocode.json](./resources/docker/policy-cics-nocode.json) and update the project name and api key.
+- Go to `resources\docker` [account-cics-nocode.json](./resources/docker/policy-cics-nocode.json) and update the project name and api key.
 
-- Go to `resources\docker` and run the docker compose file [docker-compose.yaml](./resources/docker/docker-compose.yml) using the following command: `docker-compose up -d`
+- Go to `resources\docker` and run the [docker-compose.yaml](./resources/docker/docker-compose.yml) using the following command: `docker-compose up -d`
 
 ## Open API
 

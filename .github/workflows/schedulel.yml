@@ -29,7 +29,7 @@ jobs:
         auth: ${{ secrets.GIST_SECRET }}
         gistID: 0b5e30084b16b197435339cc5b7fe7d2
         filename: as400-cobol-insurance.json
-        label: Build
+        label: AS400 Cobol Insurance
         message: ${{ env.MESSAGE }}
         color: ${{ env.COLOR }}
         
@@ -52,7 +52,7 @@ jobs:
         auth: ${{ secrets.GIST_SECRET }}
         gistID: 0b5e30084b16b197435339cc5b7fe7d2
         filename: as400-pcml-banking.json
-        label: Build
+        label: AS400 PCML BANKING
         message: ${{ env.MESSAGE }}
         color: ${{ env.COLOR }}
   make-cics-banking-badge:
@@ -74,7 +74,7 @@ jobs:
         auth: ${{ secrets.GIST_SECRET }}
         gistID: 0b5e30084b16b197435339cc5b7fe7d2
         filename: cics-banking.json
-        label: Build
+        label: CICS Banking
         message: ${{ env.MESSAGE }}
         color: ${{ env.COLOR }}
   
@@ -97,7 +97,7 @@ jobs:
         auth: ${{ secrets.GIST_SECRET }}
         gistID: 0b5e30084b16b197435339cc5b7fe7d2
         filename: cics-insurance.json
-        label: Build
+        label: CICS Insurance
         message: ${{ env.MESSAGE }}
         color: ${{ env.COLOR }}
         
@@ -121,7 +121,7 @@ jobs:
         auth: ${{ secrets.GIST_SECRET }}
         gistID: 0b5e30084b16b197435339cc5b7fe7d2
         filename: ims-banking.json
-        label: Build
+        label: IMS Banking
         message: ${{ env.MESSAGE }}
         color: ${{ env.COLOR }}
   
@@ -144,7 +144,7 @@ jobs:
         auth: ${{ secrets.GIST_SECRET }}
         gistID: 0b5e30084b16b197435339cc5b7fe7d2
         filename: db2-banking.json
-        label: Build
+        label: DB2 Banking
         message: ${{ env.MESSAGE }}
         color: ${{ env.COLOR }}
         
@@ -168,7 +168,7 @@ jobs:
         auth: ${{ secrets.GIST_SECRET }}
         gistID: 0b5e30084b16b197435339cc5b7fe7d2
         filename: db2-insurance.json
-        label: Build
+        label: DB2 Insurance
         message: ${{ env.MESSAGE }}
         color: ${{ env.COLOR }}
 
@@ -191,7 +191,7 @@ jobs:
         auth: ${{ secrets.GIST_SECRET }}
         gistID: 0b5e30084b16b197435339cc5b7fe7d2
         filename: oracle-banking.json
-        label: Build
+        label: Oracle Banking
         message: ${{ env.MESSAGE }}
         color: ${{ env.COLOR }}  
 
@@ -214,7 +214,7 @@ jobs:
         auth: ${{ secrets.GIST_SECRET }}
         gistID: 0b5e30084b16b197435339cc5b7fe7d2
         filename: oracle-insurance.json
-        label: Build
+        label: Oracle Insurance
         message: ${{ env.MESSAGE }}
         color: ${{ env.COLOR }} 
         
@@ -237,7 +237,7 @@ jobs:
         auth: ${{ secrets.GIST_SECRET }}
         gistID: 0b5e30084b16b197435339cc5b7fe7d2
         filename: sap-customers.json
-        label: Build
+        label: SAP Customers
         message: ${{ env.MESSAGE }}
         color: ${{ env.COLOR }}         
         
@@ -260,6 +260,6 @@ jobs:
         auth: ${{ secrets.GIST_SECRET }}
         gistID: 0b5e30084b16b197435339cc5b7fe7d2
         filename: sybase-banking.json
-        label: Build
+        label: Sybase Banking
         message: ${{ env.MESSAGE }}
         color: ${{ env.COLOR }}   

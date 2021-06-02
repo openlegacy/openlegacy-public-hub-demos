@@ -6,8 +6,7 @@
 - Java 11.
 - OpenLegacy Hub account.
 - Legacy sources from the resources folder:  
-  [GPOLCS2.cbl](./resources/GPOLCS2.cbl) , 
-  [LPOLCS2.cpy](./resources/LPOLCS2.cpy) , [OPOLCS2.cbl](./resources/OPOLCS2.cbl).
+- [GPOLCS2.cbl](./resources/GPOLCS2.cbl) , [LPOLCS2.cpy](./resources/LPOLCS2.cpy) , [OPOLCS2.cbl](./resources/OPOLCS2.cbl).
 
 
 ## Create a module

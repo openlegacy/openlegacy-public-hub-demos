@@ -8,7 +8,7 @@
 - Legacy sources from the resources folder:  
 - Docker
 - docker-compose
-[OACTCS9.cbl](./resources/OACTCS9.cbl), [GACTCS9.cbl](./resources/GACTCS9.cbl).
+- [OACTCS9.cbl](./resources/OACTCS9.cbl), [GACTCS9.cbl](./resources/GACTCS9.cbl).
 
 ## Create a module
 
@@ -60,15 +60,3 @@ Before creating the assets please save the resources folder into your module fol
 ## Create Hub project
 
 - `ol create project accounts-cics-microservice --modules accounts-cics`
-
-## Run No Code
-
-- Go to `resources\docker` [account-cics-nocode.json](./resources/docker/account-cics-nocode.json) and update the project name and api key.
-
-- Go to `resources\docker` and run the [docker-compose.yml](./resources/docker/docker-compose.yml) using the following command: `docker-compose up -d`
-
-## Open API
-
-- Go to http://localhost:8080/openapi.
-
-- Send the request to test the api

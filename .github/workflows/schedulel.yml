@@ -1,265 +1,265 @@
-# This is a basic workflow that is manually triggered
+# # This is a basic workflow that is manually triggered
 
-name: Update badge workflow
+# name: Update badge workflow
 
-on:
-  workflow_dispatch:
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron: '30 * * * *'
+# on:
+#   workflow_dispatch:
+#   schedule:
+#     # * is a special character in YAML so you have to quote this string
+#     - cron: '30 * * * *'
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  make-as400-cobol-insurance-badge:
-    runs-on: ubuntu-latest
-    steps:
-    - name: getJson
-      run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/as400-cobol-insurance | jq '.result')" >> $GITHUB_ENV
-    - name: set color
-      run: |
-          if ${{ env.RESULT }}; then color="green"; else color="red"; fi
-          echo "COLOR=$color" >> $GITHUB_ENV
-    - name: set message
-      run: |
-          if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
-          echo "MESSAGE=$message" >> $GITHUB_ENV
-    - name: as400-cobol-insurance Badge
-      uses: schneegans/dynamic-badges-action@v1.0.0
-      with:
-        auth: ${{ secrets.GIST_SECRET }}
-        gistID: 0b5e30084b16b197435339cc5b7fe7d2
-        filename: as400-cobol-insurance.json
-        label: AS400 Cobol Insurance
-        message: ${{ env.MESSAGE }}
-        color: ${{ env.COLOR }}
+# # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# jobs:
+#   make-as400-cobol-insurance-badge:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: getJson
+#       run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/as400-cobol-insurance | jq '.result')" >> $GITHUB_ENV
+#     - name: set color
+#       run: |
+#           if ${{ env.RESULT }}; then color="green"; else color="red"; fi
+#           echo "COLOR=$color" >> $GITHUB_ENV
+#     - name: set message
+#       run: |
+#           if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
+#           echo "MESSAGE=$message" >> $GITHUB_ENV
+#     - name: as400-cobol-insurance Badge
+#       uses: schneegans/dynamic-badges-action@v1.0.0
+#       with:
+#         auth: ${{ secrets.GIST_SECRET }}
+#         gistID: 0b5e30084b16b197435339cc5b7fe7d2
+#         filename: as400-cobol-insurance.json
+#         label: AS400 Cobol Insurance
+#         message: ${{ env.MESSAGE }}
+#         color: ${{ env.COLOR }}
         
-  make-as400-pcml-banking-badge:
-    runs-on: ubuntu-latest
-    steps:
-    - name: getJson
-      run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/as400-pcml-banking | jq '.result')" >> $GITHUB_ENV
-    - name: set color
-      run: |
-          if ${{ env.RESULT }}; then color="green"; else color="red"; fi
-          echo "COLOR=$color" >> $GITHUB_ENV
-    - name: set message
-      run: |
-          if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
-          echo "MESSAGE=$message" >> $GITHUB_ENV
-    - name: as400-pcml-banking Badge
-      uses: schneegans/dynamic-badges-action@v1.0.0
-      with:
-        auth: ${{ secrets.GIST_SECRET }}
-        gistID: 0b5e30084b16b197435339cc5b7fe7d2
-        filename: as400-pcml-banking.json
-        label: AS400 PCML BANKING
-        message: ${{ env.MESSAGE }}
-        color: ${{ env.COLOR }}
-  make-cics-banking-badge:
-    runs-on: ubuntu-latest
-    steps:
-    - name: getJson
-      run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/cics-banking | jq '.result')" >> $GITHUB_ENV
-    - name: set color
-      run: |
-          if ${{ env.RESULT }}; then color="green"; else color="red"; fi
-          echo "COLOR=$color" >> $GITHUB_ENV
-    - name: set message
-      run: |
-          if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
-          echo "MESSAGE=$message" >> $GITHUB_ENV
-    - name: cics-banking Badge
-      uses: schneegans/dynamic-badges-action@v1.0.0
-      with:
-        auth: ${{ secrets.GIST_SECRET }}
-        gistID: 0b5e30084b16b197435339cc5b7fe7d2
-        filename: cics-banking.json
-        label: CICS Banking
-        message: ${{ env.MESSAGE }}
-        color: ${{ env.COLOR }}
+#   make-as400-pcml-banking-badge:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: getJson
+#       run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/as400-pcml-banking | jq '.result')" >> $GITHUB_ENV
+#     - name: set color
+#       run: |
+#           if ${{ env.RESULT }}; then color="green"; else color="red"; fi
+#           echo "COLOR=$color" >> $GITHUB_ENV
+#     - name: set message
+#       run: |
+#           if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
+#           echo "MESSAGE=$message" >> $GITHUB_ENV
+#     - name: as400-pcml-banking Badge
+#       uses: schneegans/dynamic-badges-action@v1.0.0
+#       with:
+#         auth: ${{ secrets.GIST_SECRET }}
+#         gistID: 0b5e30084b16b197435339cc5b7fe7d2
+#         filename: as400-pcml-banking.json
+#         label: AS400 PCML BANKING
+#         message: ${{ env.MESSAGE }}
+#         color: ${{ env.COLOR }}
+#   make-cics-banking-badge:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: getJson
+#       run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/cics-banking | jq '.result')" >> $GITHUB_ENV
+#     - name: set color
+#       run: |
+#           if ${{ env.RESULT }}; then color="green"; else color="red"; fi
+#           echo "COLOR=$color" >> $GITHUB_ENV
+#     - name: set message
+#       run: |
+#           if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
+#           echo "MESSAGE=$message" >> $GITHUB_ENV
+#     - name: cics-banking Badge
+#       uses: schneegans/dynamic-badges-action@v1.0.0
+#       with:
+#         auth: ${{ secrets.GIST_SECRET }}
+#         gistID: 0b5e30084b16b197435339cc5b7fe7d2
+#         filename: cics-banking.json
+#         label: CICS Banking
+#         message: ${{ env.MESSAGE }}
+#         color: ${{ env.COLOR }}
   
-  make-cics-insurance-badge:
-    runs-on: ubuntu-latest
-    steps:
-    - name: getJson
-      run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/cics-insurance | jq '.result')" >> $GITHUB_ENV
-    - name: set color
-      run: |
-          if ${{ env.RESULT }}; then color="green"; else color="red"; fi
-          echo "COLOR=$color" >> $GITHUB_ENV
-    - name: set message
-      run: |
-          if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
-          echo "MESSAGE=$message" >> $GITHUB_ENV
-    - name: cics-insurance Badge
-      uses: schneegans/dynamic-badges-action@v1.0.0
-      with:
-        auth: ${{ secrets.GIST_SECRET }}
-        gistID: 0b5e30084b16b197435339cc5b7fe7d2
-        filename: cics-insurance.json
-        label: CICS Insurance
-        message: ${{ env.MESSAGE }}
-        color: ${{ env.COLOR }}
+#   make-cics-insurance-badge:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: getJson
+#       run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/cics-insurance | jq '.result')" >> $GITHUB_ENV
+#     - name: set color
+#       run: |
+#           if ${{ env.RESULT }}; then color="green"; else color="red"; fi
+#           echo "COLOR=$color" >> $GITHUB_ENV
+#     - name: set message
+#       run: |
+#           if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
+#           echo "MESSAGE=$message" >> $GITHUB_ENV
+#     - name: cics-insurance Badge
+#       uses: schneegans/dynamic-badges-action@v1.0.0
+#       with:
+#         auth: ${{ secrets.GIST_SECRET }}
+#         gistID: 0b5e30084b16b197435339cc5b7fe7d2
+#         filename: cics-insurance.json
+#         label: CICS Insurance
+#         message: ${{ env.MESSAGE }}
+#         color: ${{ env.COLOR }}
         
         
-  make-ims-banking-badge:
-    runs-on: ubuntu-latest
-    steps:
-    - name: getJson
-      run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/ims-banking | jq '.result')" >> $GITHUB_ENV
-    - name: set color
-      run: |
-          if ${{ env.RESULT }}; then color="green"; else color="red"; fi
-          echo "COLOR=$color" >> $GITHUB_ENV
-    - name: set message
-      run: |
-          if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
-          echo "MESSAGE=$message" >> $GITHUB_ENV
-    - name: ims-banking Badge
-      uses: schneegans/dynamic-badges-action@v1.0.0
-      with:
-        auth: ${{ secrets.GIST_SECRET }}
-        gistID: 0b5e30084b16b197435339cc5b7fe7d2
-        filename: ims-banking.json
-        label: IMS Banking
-        message: ${{ env.MESSAGE }}
-        color: ${{ env.COLOR }}
+#   make-ims-banking-badge:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: getJson
+#       run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/ims-banking | jq '.result')" >> $GITHUB_ENV
+#     - name: set color
+#       run: |
+#           if ${{ env.RESULT }}; then color="green"; else color="red"; fi
+#           echo "COLOR=$color" >> $GITHUB_ENV
+#     - name: set message
+#       run: |
+#           if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
+#           echo "MESSAGE=$message" >> $GITHUB_ENV
+#     - name: ims-banking Badge
+#       uses: schneegans/dynamic-badges-action@v1.0.0
+#       with:
+#         auth: ${{ secrets.GIST_SECRET }}
+#         gistID: 0b5e30084b16b197435339cc5b7fe7d2
+#         filename: ims-banking.json
+#         label: IMS Banking
+#         message: ${{ env.MESSAGE }}
+#         color: ${{ env.COLOR }}
   
-  make-db2-banking-badge:
-    runs-on: ubuntu-latest
-    steps:
-    - name: getJson
-      run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/db2-banking | jq '.result')" >> $GITHUB_ENV
-    - name: set color
-      run: |
-          if ${{ env.RESULT }}; then color="green"; else color="red"; fi
-          echo "COLOR=$color" >> $GITHUB_ENV
-    - name: set message
-      run: |
-          if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
-          echo "MESSAGE=$message" >> $GITHUB_ENV
-    - name: db2-banking Badge
-      uses: schneegans/dynamic-badges-action@v1.0.0
-      with:
-        auth: ${{ secrets.GIST_SECRET }}
-        gistID: 0b5e30084b16b197435339cc5b7fe7d2
-        filename: db2-banking.json
-        label: DB2 Banking
-        message: ${{ env.MESSAGE }}
-        color: ${{ env.COLOR }}
+#   make-db2-banking-badge:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: getJson
+#       run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/db2-banking | jq '.result')" >> $GITHUB_ENV
+#     - name: set color
+#       run: |
+#           if ${{ env.RESULT }}; then color="green"; else color="red"; fi
+#           echo "COLOR=$color" >> $GITHUB_ENV
+#     - name: set message
+#       run: |
+#           if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
+#           echo "MESSAGE=$message" >> $GITHUB_ENV
+#     - name: db2-banking Badge
+#       uses: schneegans/dynamic-badges-action@v1.0.0
+#       with:
+#         auth: ${{ secrets.GIST_SECRET }}
+#         gistID: 0b5e30084b16b197435339cc5b7fe7d2
+#         filename: db2-banking.json
+#         label: DB2 Banking
+#         message: ${{ env.MESSAGE }}
+#         color: ${{ env.COLOR }}
         
         
-  make-db2-insurance-badge:
-    runs-on: ubuntu-latest
-    steps:
-    - name: getJson
-      run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/db2-insurance | jq '.result')" >> $GITHUB_ENV
-    - name: set color
-      run: |
-          if ${{ env.RESULT }}; then color="green"; else color="red"; fi
-          echo "COLOR=$color" >> $GITHUB_ENV
-    - name: set message
-      run: |
-          if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
-          echo "MESSAGE=$message" >> $GITHUB_ENV
-    - name: db2-insurance Badge
-      uses: schneegans/dynamic-badges-action@v1.0.0
-      with:
-        auth: ${{ secrets.GIST_SECRET }}
-        gistID: 0b5e30084b16b197435339cc5b7fe7d2
-        filename: db2-insurance.json
-        label: DB2 Insurance
-        message: ${{ env.MESSAGE }}
-        color: ${{ env.COLOR }}
+#   make-db2-insurance-badge:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: getJson
+#       run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/db2-insurance | jq '.result')" >> $GITHUB_ENV
+#     - name: set color
+#       run: |
+#           if ${{ env.RESULT }}; then color="green"; else color="red"; fi
+#           echo "COLOR=$color" >> $GITHUB_ENV
+#     - name: set message
+#       run: |
+#           if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
+#           echo "MESSAGE=$message" >> $GITHUB_ENV
+#     - name: db2-insurance Badge
+#       uses: schneegans/dynamic-badges-action@v1.0.0
+#       with:
+#         auth: ${{ secrets.GIST_SECRET }}
+#         gistID: 0b5e30084b16b197435339cc5b7fe7d2
+#         filename: db2-insurance.json
+#         label: DB2 Insurance
+#         message: ${{ env.MESSAGE }}
+#         color: ${{ env.COLOR }}
 
-  make-oracle-banking-badge:
-    runs-on: ubuntu-latest
-    steps:
-    - name: getJson
-      run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/oracle-banking | jq '.result')" >> $GITHUB_ENV
-    - name: set color
-      run: |
-          if ${{ env.RESULT }}; then color="green"; else color="red"; fi
-          echo "COLOR=$color" >> $GITHUB_ENV
-    - name: set message
-      run: |
-          if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
-          echo "MESSAGE=$message" >> $GITHUB_ENV
-    - name: oracle-banking Badge
-      uses: schneegans/dynamic-badges-action@v1.0.0
-      with:
-        auth: ${{ secrets.GIST_SECRET }}
-        gistID: 0b5e30084b16b197435339cc5b7fe7d2
-        filename: oracle-banking.json
-        label: Oracle Banking
-        message: ${{ env.MESSAGE }}
-        color: ${{ env.COLOR }}  
+#   make-oracle-banking-badge:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: getJson
+#       run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/oracle-banking | jq '.result')" >> $GITHUB_ENV
+#     - name: set color
+#       run: |
+#           if ${{ env.RESULT }}; then color="green"; else color="red"; fi
+#           echo "COLOR=$color" >> $GITHUB_ENV
+#     - name: set message
+#       run: |
+#           if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
+#           echo "MESSAGE=$message" >> $GITHUB_ENV
+#     - name: oracle-banking Badge
+#       uses: schneegans/dynamic-badges-action@v1.0.0
+#       with:
+#         auth: ${{ secrets.GIST_SECRET }}
+#         gistID: 0b5e30084b16b197435339cc5b7fe7d2
+#         filename: oracle-banking.json
+#         label: Oracle Banking
+#         message: ${{ env.MESSAGE }}
+#         color: ${{ env.COLOR }}  
 
-  make-oracle-insurance-badge:
-    runs-on: ubuntu-latest
-    steps:
-    - name: getJson
-      run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/oracle-insurance | jq '.result')" >> $GITHUB_ENV
-    - name: set color
-      run: |
-          if ${{ env.RESULT }}; then color="green"; else color="red"; fi
-          echo "COLOR=$color" >> $GITHUB_ENV
-    - name: set message
-      run: |
-          if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
-          echo "MESSAGE=$message" >> $GITHUB_ENV
-    - name: oracle-insurance Badge
-      uses: schneegans/dynamic-badges-action@v1.0.0
-      with:
-        auth: ${{ secrets.GIST_SECRET }}
-        gistID: 0b5e30084b16b197435339cc5b7fe7d2
-        filename: oracle-insurance.json
-        label: Oracle Insurance
-        message: ${{ env.MESSAGE }}
-        color: ${{ env.COLOR }} 
+#   make-oracle-insurance-badge:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: getJson
+#       run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/oracle-insurance | jq '.result')" >> $GITHUB_ENV
+#     - name: set color
+#       run: |
+#           if ${{ env.RESULT }}; then color="green"; else color="red"; fi
+#           echo "COLOR=$color" >> $GITHUB_ENV
+#     - name: set message
+#       run: |
+#           if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
+#           echo "MESSAGE=$message" >> $GITHUB_ENV
+#     - name: oracle-insurance Badge
+#       uses: schneegans/dynamic-badges-action@v1.0.0
+#       with:
+#         auth: ${{ secrets.GIST_SECRET }}
+#         gistID: 0b5e30084b16b197435339cc5b7fe7d2
+#         filename: oracle-insurance.json
+#         label: Oracle Insurance
+#         message: ${{ env.MESSAGE }}
+#         color: ${{ env.COLOR }} 
         
-  make-sap-customers-badge:
-    runs-on: ubuntu-latest
-    steps:
-    - name: getJson
-      run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/sap-customers | jq '.result')" >> $GITHUB_ENV
-    - name: set color
-      run: |
-          if ${{ env.RESULT }}; then color="green"; else color="red"; fi
-          echo "COLOR=$color" >> $GITHUB_ENV
-    - name: set message
-      run: |
-          if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
-          echo "MESSAGE=$message" >> $GITHUB_ENV
-    - name: sap-customers Badge
-      uses: schneegans/dynamic-badges-action@v1.0.0
-      with:
-        auth: ${{ secrets.GIST_SECRET }}
-        gistID: 0b5e30084b16b197435339cc5b7fe7d2
-        filename: sap-customers.json
-        label: SAP Customers
-        message: ${{ env.MESSAGE }}
-        color: ${{ env.COLOR }}         
+#   make-sap-customers-badge:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: getJson
+#       run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/sap-customers | jq '.result')" >> $GITHUB_ENV
+#     - name: set color
+#       run: |
+#           if ${{ env.RESULT }}; then color="green"; else color="red"; fi
+#           echo "COLOR=$color" >> $GITHUB_ENV
+#     - name: set message
+#       run: |
+#           if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
+#           echo "MESSAGE=$message" >> $GITHUB_ENV
+#     - name: sap-customers Badge
+#       uses: schneegans/dynamic-badges-action@v1.0.0
+#       with:
+#         auth: ${{ secrets.GIST_SECRET }}
+#         gistID: 0b5e30084b16b197435339cc5b7fe7d2
+#         filename: sap-customers.json
+#         label: SAP Customers
+#         message: ${{ env.MESSAGE }}
+#         color: ${{ env.COLOR }}         
         
-  make-sybase-banking-badge:
-    runs-on: ubuntu-latest
-    steps:
-    - name: getJson
-      run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/sybase-banking | jq '.result')" >> $GITHUB_ENV
-    - name: set color
-      run: |
-          if ${{ env.RESULT }}; then color="green"; else color="red"; fi
-          echo "COLOR=$color" >> $GITHUB_ENV
-    - name: set message
-      run: |
-          if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
-          echo "MESSAGE=$message" >> $GITHUB_ENV
-    - name: sybase-banking Badge
-      uses: schneegans/dynamic-badges-action@v1.0.0
-      with:
-        auth: ${{ secrets.GIST_SECRET }}
-        gistID: 0b5e30084b16b197435339cc5b7fe7d2
-        filename: sybase-banking.json
-        label: Sybase Banking
-        message: ${{ env.MESSAGE }}
-        color: ${{ env.COLOR }}   
+#   make-sybase-banking-badge:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: getJson
+#       run: echo "RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/sybase-banking | jq '.result')" >> $GITHUB_ENV
+#     - name: set color
+#       run: |
+#           if ${{ env.RESULT }}; then color="green"; else color="red"; fi
+#           echo "COLOR=$color" >> $GITHUB_ENV
+#     - name: set message
+#       run: |
+#           if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
+#           echo "MESSAGE=$message" >> $GITHUB_ENV
+#     - name: sybase-banking Badge
+#       uses: schneegans/dynamic-badges-action@v1.0.0
+#       with:
+#         auth: ${{ secrets.GIST_SECRET }}
+#         gistID: 0b5e30084b16b197435339cc5b7fe7d2
+#         filename: sybase-banking.json
+#         label: Sybase Banking
+#         message: ${{ env.MESSAGE }}
+#         color: ${{ env.COLOR }}   

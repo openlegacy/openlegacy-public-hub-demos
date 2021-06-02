@@ -17,17 +17,14 @@ jobs:
       
     - name: Read Properties
       id: read_property
-      uses: ashley-taylor/read-json-property-action@v1.0
-      with:
-        path: ./as400-cobol-insurance.json
-        property: result
+      run: as400-cobol-insurance.json | jq '.result' > $RESULT
     - name: set color
       run: |
-          if [ "${{ steps.read_property.outputs.value }}" -eq true ]; then color="green"; else color="red"; fi
+          if [ "${{ env.RESULT }}" -eq true ]; then color="green"; else color="red"; fi
           echo "color=$color" >> $COLOR
     - name: set message
       run: |
-          if [ "${{ steps.read_property.outputs.value }}" -eq true ]; then message="Test Passed"; else message="Test Failed"; fi
+          if [ "${{ env.RESULT }}" -eq true ]; then message="Test Passed"; else message="Test Failed"; fi
           echo "message=$message" >> $MESSAGE
     - name: CICS - Banking Badge
       uses: schneegans/dynamic-badges-action@v1.0.0

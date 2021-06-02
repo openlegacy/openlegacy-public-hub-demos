@@ -1,0 +1,43 @@
+# This is a basic workflow that is manually triggered
+
+name: Update badge workflow
+
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron: '30 * * * *'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  make-badges:
+    runs-on: ubuntu-latest
+    steps:
+    - name: getJson
+      run: curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/as400-cobol-insurance > as400-cobol-insurance.json
+      
+    - name: Read Properties
+      id: read_property
+      uses:  ashley-taylor/read-json-property-action@v1.0
+      with:
+        path: as400-cobol-insurance.json
+        property: result
+    - name: set color
+      run: |
+          if [ "${{ steps.read_property.outputs.value }}" -eq true ]; then color="green"; else color="red"; fi
+          echo "color=$color" >> $COLOR
+    - name: set message
+      run: |
+          if [ "${{ steps.read_property.outputs.value }}" -eq true ]; then message="Test Passed"; else message="Test Failed"; fi
+          echo "message=$message" >> $MESSAGE
+    - name: CICS - Banking Badge
+      uses: schneegans/dynamic-badges-action@v1.0.0
+      with:
+        auth: ${{ secrets.GIST_SECRET }}
+        gistID: 0b5e30084b16b197435339cc5b7fe7d2
+        filename: as400-cobol-insurance.json
+        label: Build
+        message: ${{ env.MESSAGE }}
+        color: ${{ env.COLOR }}
+        
+
+  

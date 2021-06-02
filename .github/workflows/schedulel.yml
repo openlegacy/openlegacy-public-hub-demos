@@ -17,7 +17,7 @@ jobs:
       
     - name: Read Properties
       id: read_property
-      uses:  ashley-taylor/read-json-property-action@v1.0
+      uses: ashley-taylor/read-json-property-action@v1.0
       with:
         path: ./as400-cobol-insurance.json
         property: result

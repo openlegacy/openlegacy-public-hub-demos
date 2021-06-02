@@ -12,4 +12,4 @@
 For more information related to OpenLegacy Hub, please refer to the offical documentation site: https://hub-support.openlegacy.com/
 
 
-![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/ruslan1abramov/0b5e30084b16b197435339cc5b7fe7d2/raw/test.json)
+![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Ruslan1abramov/0b5e30084b16b197435339cc5b7fe7d2/raw/as400-cobol-insurance.json)

@@ -7,8 +7,6 @@
 - OpenLegacy Hub account.
 - Legacy sources from the resources folder:  
 - Docker
-- docker-compose
-[OACTCS9.cbl](./resources/OACTCS9.cbl), [GACTCS9.cbl](./resources/GACTCS9.cbl).
 
 ## Create a module
 

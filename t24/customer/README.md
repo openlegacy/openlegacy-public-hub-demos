@@ -14,9 +14,10 @@
 
 `ol test connection --host t24-tafc.openlegacy.com --port 20002 --username INPUTT --password 123456 --source TEST`
 
-## Create the assets
+> **NOTE:**  
+> The test connection command can run only from a module folder
 
-Before creating the assets please save the files from the resources folder into your module folder
+## Create the assets
 
 `ol add --protocol http:// --charset UTF-8 --timeout 30000 --t24-application CUSTOMER --gts-control 1 --company openlegacy --function I`
 

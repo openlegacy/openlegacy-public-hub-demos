@@ -17,11 +17,11 @@ jobs:
       run: RESULT=$(curl https://3er0xo9xb1.execute-api.us-east-1.amazonaws.com/dev/cicd-response/as400-cobol-insurance | jq '.result') >> $GITHUB_ENV
     - name: set color
       run: |
-          if [ "${{ env.RESULT }}" -eq true ]; then color="green"; else color="red"; fi
+          if ${{ env.RESULT }}; then color="green"; else color="red"; fi
           echo "COLOR=$color" >> $GITHUB_ENV
     - name: set message
       run: |
-          if [ "${{ env.RESULT }}" -eq true ]; then message="Test Passed"; else message="Test Failed"; fi
+          if ${{ env.RESULT }}; then message="Test Passed"; else message="Test Failed"; fi
           echo "MESSAGE=$message" >> $GITHUB_ENV
     - name: CICS - Banking Badge
       uses: schneegans/dynamic-badges-action@v1.0.0

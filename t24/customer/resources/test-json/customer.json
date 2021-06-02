@@ -1,0 +1,293 @@
+{
+    "mandateAppl" : [ {
+      "mandateReg" : "",
+      "mandateRecord" : "",
+      "mandateAppl" : ""
+    } ],
+    "shortName" : [ {
+      "shortName" : ""
+    } ],
+    "name_1" : [ {
+      "name_1" : ""
+    } ],
+    "phone_1" : [ {
+      "phone_1" : "",
+      "email_1" : "",
+      "sms_1" : "",
+      "addrLocation" : ""
+    } ],
+    "name_2" : [ {
+      "name_2" : ""
+    } ],
+    "street" : [ {
+      "street" : ""
+    } ],
+    "address" : [ {
+      "address" : ""
+    } ],
+    "townCountry" : [ {
+      "townCountry" : ""
+    } ],
+    "employmentStatus" : [ {
+      "employersBuss" : "",
+      "employmentStart" : "20210304",
+      "employersName" : "",
+      "occupation" : "",
+      "annualBonus" : "",
+      "jobTitle" : "",
+      "employersAdd" : [ {
+        "employersAdd" : ""
+      } ],
+      "salaryDateFreq" : "",
+      "salary" : "",
+      "employmentStatus" : "",
+      "customerCurrency" : ""
+    } ],
+    "postCode" : [ {
+      "postCode" : ""
+    } ],
+    "country" : [ {
+      "country" : ""
+    } ],
+    "relationCode" : [ {
+      "relReserv1" : "",
+      "relationCode" : "",
+      "relReserv6" : "",
+      "relDelivOpt" : [ {
+        "roleMoreInfo" : "",
+        "role" : "",
+        "relDelivOpt" : "",
+        "roleNotes" : ""
+      } ],
+      "relReserv5" : "",
+      "relCustomer" : "",
+      "relReserv4" : "",
+      "reversRelCode" : "",
+      "relReserv3" : "",
+      "relReserv2" : ""
+    } ],
+    "holdingsPivot" : [ {
+      "holdingsPivot" : ""
+    } ],
+    "altCusId" : [ {
+      "altCusId" : ""
+    } ],
+    "externSysId" : [ {
+      "externSysId" : "",
+      "externCusId" : ""
+    } ],
+    "residenceStatus" : [ {
+      "mortgageAmt" : "",
+      "residenceType" : "",
+      "residenceSince" : "20210304",
+      "residenceValue" : "",
+      "residenceStatus" : ""
+    } ],
+    "otherOfficer" : [ {
+      "otherOfficer" : ""
+    } ],
+    "otherFinRel" : [ {
+      "otherFinInst" : "",
+      "otherFinRel" : ""
+    } ],
+    "commType" : [ {
+      "commType" : "",
+      "prefChannel" : ""
+    } ],
+    "legalIdDocName" : [ {
+      "legalIdDocName" : ""
+    } ],
+    "interests" : [ {
+      "interests" : ""
+    } ],
+    "fax_1" : [ {
+      "fax_1" : ""
+    } ],
+    "text" : [ {
+      "text" : ""
+    } ],
+    "previousName" : [ {
+      "changeReason" : "",
+      "previousName" : "",
+      "changeDate" : "20210304"
+    } ],
+    "legalId" : [ {
+      "legalIssDate" : "20210304",
+      "legalExpDate" : "20210304",
+      "legalIssAuth" : "",
+      "legalDocName" : "",
+      "legalId" : "",
+      "legalHolderName" : ""
+    } ],
+    "offPhone" : [ {
+      "offPhone" : ""
+    } ],
+    "spokenLanguage" : [ {
+      "spokenLanguage" : ""
+    } ],
+    "pastimes" : [ {
+      "pastimes" : ""
+    } ],
+    "furtherDetails" : [ {
+      "furtherDetails" : ""
+    } ],
+    "otherNationality" : [ {
+      "otherNationality" : ""
+    } ],
+    "taxId" : [ {
+      "taxId" : ""
+    } ],
+    "visType" : [ {
+      "visType" : "",
+      "visComment" : [ {
+        "visInternalReview" : "",
+        "visComment" : ""
+      } ]
+    } ],
+    "formerVisType" : [ {
+      "formerVisComment" : [ {
+        "formerVisComment" : ""
+      } ],
+      "formerVisType" : ""
+    } ],
+    "override" : [ {
+      "override" : ""
+    } ],
+    "riskAssetType" : [ {
+      "riskFromDate" : "20210304",
+      "riskLevel" : "",
+      "riskTolerance" : "",
+      "riskAssetType" : ""
+    } ],
+    "customerRating" : [ {
+      "customerRating" : ""
+    } ],
+    "inputter" : [ {
+      "inputter" : ""
+    } ],
+    "crProfileType" : [ {
+      "crProfileType" : "",
+      "crProfile" : ""
+    } ],
+    "dateTime" : [ {
+      "dateTime" : ""
+    } ],
+    "autoNextKycReviewDate" : "20210304",
+    "manualRiskClass" : "",
+    "netMonthlyOut" : "",
+    "introducer" : "",
+    "currNo" : "",
+    "assetClass" : "",
+    "manualNextSuitReviewDate" : "20210304",
+    "reserved_51" : "",
+    "calcRiskClass" : "",
+    "customerLiability" : "",
+    "mergedStatus" : "",
+    "postingRestrict" : "",
+    "netMonthlyIn" : "",
+    "mobileBankingService" : "",
+    "accountOfficer" : "",
+    "nationality" : "",
+    "internetBankingService" : "",
+    "lastAmlResultDate" : "20210304",
+    "gender" : "",
+    "lastKycReviewDate" : "20210304",
+    "industry" : "",
+    "coCode" : "",
+    "cuEffDate" : "20210304",
+    "amlResult" : "",
+    "dispoExempt" : "",
+    "globalCustomer" : "",
+    "dateOfBirth" : "20210304",
+    "issueCheques" : "",
+    "customerSince" : "20210304",
+    "birthIncorpDate" : "20210304",
+    "reserved_07" : "",
+    "auditorCode" : "",
+    "reserved_08" : "",
+    "reserved_05" : "",
+    "reserved_06" : "",
+    "reserved_03" : "",
+    "reserved_04" : "",
+    "reserved_01" : "",
+    "reserved_02" : "",
+    "reserved_09" : "",
+    "contactDate" : "20210304",
+    "overrideReason" : "",
+    "language" : "",
+    "reserved_10" : "",
+    "reserved_11" : "",
+    "customerType" : "",
+    "auditDateTime" : "",
+    "segment" : "",
+    "familyName" : "",
+    "reserved_18" : "",
+    "reserved_19" : "",
+    "mnemonic" : "",
+    "reserved_16" : "",
+    "reserved_17" : "",
+    "reserved_14" : "",
+    "residence" : "",
+    "reserved_15" : "",
+    "sector" : "",
+    "reserved_12" : "",
+    "reserved_13" : "",
+    "lastSuitReviewDate" : "20210304",
+    "noOfDependents" : "",
+    "clsCparty" : "",
+    "residenceRegion" : "",
+    "givenNames" : "",
+    "companyBook" : "",
+    "amlCheck" : "",
+    "manualNextKycReviewDate" : "20210304",
+    "reserved_21" : "",
+    "reserved_22" : "",
+    "reserved_20" : "",
+    "reserved_29" : "",
+    "reserved_27" : "",
+    "confidTxt" : "",
+    "reserved_28" : "",
+    "reserved_25" : "",
+    "reserved_26" : "",
+    "deptCode" : "",
+    "reserved_23" : "",
+    "maritalStatus" : "",
+    "reserved_24" : "",
+    "dispoOfficer" : "",
+    "title" : "",
+    "reserved_32" : "",
+    "customerStatus" : "",
+    "reserved_33" : "",
+    "reserved_30" : "",
+    "reserved_31" : "",
+    "mergedTo" : "",
+    "dateLastVerified" : "",
+    "allowBulkProcess" : "",
+    "kycRelationship" : "",
+    "reportTemplate" : "",
+    "kycComplete" : "",
+    "autoNextSuitReviewDate" : "20210304",
+    "target" : "",
+    "noUpdateCrm" : "",
+    "secureMessage" : "",
+    "domicile" : "",
+    "fxCommGroupId" : "",
+    "reviewFrequency" : "",
+    "@_transaction_info_" : {
+      "userInformation" : {
+        "password" : "123456",
+        "additional" : [ "" ],
+        "userName" : "INPUTT"
+      },
+      "options" : {
+        "function" : "I",
+        "processingFlag" : "BUILD",
+        "version" : ""
+      },
+      "messageId" : "",
+      "operation" : "",
+      "transactionId" : "100384",
+      "statusCode" : 0
+    }
+  }
+  

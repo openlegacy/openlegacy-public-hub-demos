@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+    account-sybase:
+        image: openlegacy/sybase-db:latest
+        container_name: account-sybase
+        ports:
+          - "8087:8080"
+        volumes: 
+          - ./account-sybase-nocode.json:/app/config/config.json

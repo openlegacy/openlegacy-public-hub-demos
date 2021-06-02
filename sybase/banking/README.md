@@ -29,19 +29,11 @@ Before creating the assets please save the resources folder into your module fol
 - **Get Single Account**  
   `ol add --executable "master.dbo.GET_ACCOUNT" --advanced-result-set-query "EXEC master.dbo.GET_ACCOUNT @P_ACCOUNT_ID='00318663682'"`
 
-
-## Test the assets
-
-> **NOTE:**  
-> The test asset command must run from the module directory and you must be logged in to the hub.  
-> `ol login -api-key <your api key>`
-
-
 ### Open Account
 
 1.  Go to `account-sybase\assets\open_account\test_data\case-1\in.json` and replace it with the following Json:
 
-- [oactcs9 json](https://github.com/openlegacy/openlegacy-public-hub-demos/blob/master/sybase/banking/resources/test-json/open_account.json)
+- [open_account json](https://github.com/openlegacy/openlegacy-public-hub-demos/blob/master/sybase/banking/resources/test-json/open_account.json)
 
 2.  Run `ol test asset open_account`
 
@@ -49,7 +41,7 @@ Before creating the assets please save the resources folder into your module fol
 
 1.  Go to `account-sybase\assets\get_account\test_data\case-1\in.json` and replace it with the following Json:
 
-- [gactcs9 json](https://github.com/openlegacy/openlegacy-public-hub-demos/blob/master/sybase/banking/resources/test-json/get_account.json)
+- [get_account json](https://github.com/openlegacy/openlegacy-public-hub-demos/blob/master/sybase/banking/resources/test-json/get_account.json)
 
 2.  Run `ol test asset get_account`
 

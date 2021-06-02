@@ -10,3 +10,6 @@
 6. Docker Installed (for using the run-nocode containers scripts) - https://docs.docker.com/get-docker/
 
 For more information related to OpenLegacy Hub, please refer to the offical documentation site: https://hub-support.openlegacy.com/
+
+
+![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/ruslan1abramov/0b5e30084b16b197435339cc5b7fe7d2/raw/test.json)

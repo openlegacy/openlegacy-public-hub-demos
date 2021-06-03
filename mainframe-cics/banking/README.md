@@ -60,3 +60,15 @@ Before creating the assets please save the resources folder into your module fol
 ## Create Hub project
 
 - `ol create project accounts-cics-microservice --modules accounts-cics`
+
+## Run No Code
+
+- Go to `resources\docker` and update the [account-cics-nocode.json](./resources/docker/account-cics-nocode.json) with project name and api key.
+
+- Go to `resources\docker` and run the [docker-compose.yaml](./resources/docker/docker-compose.yml) file using the following command: `docker-compose up -d`
+
+## Open API
+
+- Go to http://localhost:8080/openapi.
+
+- Send the request to test the api

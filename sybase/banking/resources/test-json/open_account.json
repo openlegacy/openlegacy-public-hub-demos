@@ -1,0 +1,16 @@
+{
+    "paccountId" : "00318663682",
+    "pcustomerId" : "1006200630011111",
+    "pcustomerName" : "John Doe",
+    "piban" : "GB21BARC20035318623121",
+    "pcountryCode" : "IS",
+    "pbankId" : "HAPO",
+    "pbrnchId" : "20025",
+    "ptypcd" : "P",
+    "ptypeName" : "MM Personal",
+    "psubTypcd" : "",
+    "ptypeDescription" : "Money Market Account",
+    "pbalance" : 8237,
+    "pcurrency" : "USA",
+    "plocked" : "N"
+  }

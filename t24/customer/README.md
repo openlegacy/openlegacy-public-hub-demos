@@ -14,9 +14,10 @@
 
 `ol test connection --host t24-tafc.openlegacy.com --port 20002 --username INPUTT --password 123456 --source TEST`
 
-## Create the assets
+> **NOTE:**  
+> The test connection command can run only from a module folder
 
-Before creating the assets please save the files from the resources folder into your module folder
+## Create the assets
 
 `ol add --protocol http:// --charset UTF-8 --timeout 30000 --t24-application CUSTOMER --gts-control 1 --company openlegacy --function I`
 
@@ -30,7 +31,7 @@ Before creating the assets please save the files from the resources folder into 
 
 1.  Go to `customer-t24\assets\customer\test_data\case-1\in.json` and replace it with the following Json:
 
-- [customer json](https://github.com/openlegacy/openlegacy-public-hub-demos/blob/master/t24/customer/resources/test-json/castomer.json)
+- [customer json](https://github.com/openlegacy/openlegacy-public-hub-demos/blob/master/t24/customer/resources/test-json/customer.json)
 
 2.  Run `ol test asset customer`
 

@@ -2,7 +2,7 @@
 
 ## Pre-Requirements
 
-- OpenLegacy cli installed on your PC.
+- OpenLegacy CLI installed on your PC.
 - Java 11.
 - OpenLegacy Hub account.
 - Legacy sources from the resources folder:  
@@ -12,11 +12,11 @@
 
 `ol create module --connector as400-pcml account-as400-pcml`
 
-Enter to the module folder.
+Enter the module folder.
 
 ## Add externalLibs property to module.json
 
-1. Go to `module.json` and add the `externalLibs` property in to connection properties, this is needed in order to tell the jt400 which additional libraries to load.
+1. Go to `module.json` and add the `externalLibs` property to the connection properties. This is needed to tell the jt400 which additional libraries to load.
  <details>
   <summary>module.json</summary>
 

@@ -12,7 +12,8 @@
 
 `ol create module --connector as400-pcml account-as400-pcml`
 
-Enter the module folder.
+Enter the module folder
+
 `cd account-as400-pcml`
 
 ## Add externalLibs property to module.json

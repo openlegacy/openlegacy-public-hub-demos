@@ -1,7 +1,7 @@
 # How To Create AS400 Cobol Insurance Module
 
 ## Pre-Requirements
-- OpenLegacy cli installed on your PC.
+- OpenLegacy CLI installed on your PC.
 - Java 11.
 - OpenLegacy Hub account.
 - Legacy sources from the resources folder:
@@ -21,7 +21,7 @@ ol test connection --host as400.openlegacy.com --user openlega1 --password openl
 `ol add --source-path ../resources/POL2GET.cbl --program-path /QSYS.LIB/POLICY.LIB/POL2GET.PGM`
 
 > **NOTE:**  
-> The test asset command must run from the module directory and you must be logged in to the hub.  
+> The test asset command must be run from the module directory and you must be logged into the hub.  
 > `ol login -api-key <your api key>`
 
 ### Get All Policies
@@ -44,7 +44,7 @@ ol test connection --host as400.openlegacy.com --user openlega1 --password openl
 
 ## Run No Code
 
-- Go to `resources\docker` [account-cics-nocode.json](./resources/docker/policy-as400-cobol-nocode.json) and update the project name and api key.
+- Go to `resources\docker` [account-cics-nocode.json](./resources/docker/policy-as400-cobol-nocode.json) and update the project name and API key.
 
 - Go to `resources\docker` and run the [docker-compose.yml](./resources/docker/docker-compose.yml) using the following command: `docker-compose up -d`
 
@@ -52,4 +52,4 @@ ol test connection --host as400.openlegacy.com --user openlega1 --password openl
 
 - Go to http://localhost:8080/openapi.
 
-- Send the request to test the api
+- Send the request to test the API

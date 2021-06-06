@@ -47,7 +47,7 @@ Before creating the assets please save the resources folder into your module fol
   ## Test the assets
 
 > **NOTE:**  
-> The test asset command must run from the module directory and you must be logged in to the hub.  
+> The test asset command must be run from the module directory and you must be logged into the hub.  
 > `ol login -api-key <your api key>`
 
 ### Open Account
@@ -76,7 +76,7 @@ Before creating the assets please save the resources folder into your module fol
 
 ## Run No Code
 
-- Go to `resources\docker` [account-as400-pcml-nocode.json](./resources/docker/account-as400-pcml-nocode.json) and update the project name and api key.
+- Go to `resources\docker` [account-as400-pcml-nocode.json](./resources/docker/account-as400-pcml-nocode.json) and update the project name and API key.
 
 - Go to `resources\docker` and run the [docker-compose.yml](./resources/docker/docker-compose.yml) using the following command: `docker-compose up -d`
 
@@ -84,4 +84,4 @@ Before creating the assets please save the resources folder into your module fol
 
 - Go to http://localhost:8080/openapi.
 
-- Send the request to test the api
+- Send the request to test the API

@@ -2,7 +2,7 @@
 
 ## Pre-Requirements
 
-- OpenLegacy cli installed on your PC.
+- OpenLegacy CLI installed on your PC.
 - Java 11.
 - OpenLegacy Hub account.
 
@@ -26,7 +26,7 @@ ol test connection --driver-class-name oracle.jdbc.driver.OracleDriver --url jdb
 ## Test the assets
 
 > **NOTE:**  
-> The test asset command must run from the module directory and you must be logged in to the hub.  
+> The test asset command must be run from the module directory and you must be logged into the hub.  
 > `ol login -api-key <your api key>`
 
 ### Create Policy
@@ -55,7 +55,7 @@ ol test connection --driver-class-name oracle.jdbc.driver.OracleDriver --url jdb
 
 ## Run No Code
 
-- Go to `resources\docker` and update the [policy-oracle-nocode.json](./resources/docker/policy-oracle-nocode.json)  project name and api key.
+- Go to `resources\docker` and update the [policy-oracle-nocode.json](./resources/docker/policy-oracle-nocode.json)  project name and API key.
 
 - Go to `resources\docker` and run the [docker-compose.yml](./resources/docker/docker-compose.yml) file using the following command: `docker-compose up -d`
 
@@ -63,4 +63,4 @@ ol test connection --driver-class-name oracle.jdbc.driver.OracleDriver --url jdb
 
 - Go to http://localhost:8080/openapi.
 
-- Send the request to test the api
+- Send the request to test the API

@@ -2,7 +2,7 @@
 
 ## Pre-Requirements
 
-- OpenLegacy cli installed on your PC.
+- OpenLegacy CLI installed on your PC.
 - Java 11.
 - OpenLegacy Hub account.
 - Legacy sources from the resources folder:  
@@ -14,7 +14,7 @@
 
 `ol create module --connector mf-cics-cobol accounts-cics`
 
-Enter to the module folder.
+Enter the module folder.
 
 ## Test Connection
 
@@ -30,10 +30,10 @@ Before creating the assets please save the resources folder into your module fol
   `ol add -i .\resources\GACTCS9I.cpy -o .\resources\GACTCS9O.cpy --program-path GACTCS9`
 
 
-## Test the assets
+## Test the Assets
 
 > **NOTE:**  
-> The test asset command must run from the module directory and you must be logged in to the hub.  
+> The test asset command must be run from the module directory and you must be logged into the hub.  
 > `ol login -api-key <your api key>`
 
 
@@ -53,7 +53,7 @@ Before creating the assets please save the resources folder into your module fol
 
 2.  Run `ol test asset gactcs9`
 
-## Push Module To The Hub
+## Push Module to the Hub
 
 - Run `ol push module`
 
@@ -63,7 +63,7 @@ Before creating the assets please save the resources folder into your module fol
 
 ## Run No Code
 
-- Go to `resources\docker` and update the [account-cics-nocode.json](./resources/docker/account-cics-nocode.json) with project name and api key.
+- Go to `resources\docker` and update the [account-cics-nocode.json](./resources/docker/account-cics-nocode.json) with project name and API key.
 
 - Go to `resources\docker` and run the [docker-compose.yaml](./resources/docker/docker-compose.yml) file using the following command: `docker-compose up -d`
 
@@ -71,4 +71,4 @@ Before creating the assets please save the resources folder into your module fol
 
 - Go to http://localhost:8080/openapi.
 
-- Send the request to test the api
+- Send the request to test the API

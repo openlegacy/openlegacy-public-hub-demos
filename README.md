@@ -1,4 +1,4 @@
-# Openlegacy Public Hub Demos
+# OpenLegacy Public Hub Demos
 
 ## Pre-Requirements
 

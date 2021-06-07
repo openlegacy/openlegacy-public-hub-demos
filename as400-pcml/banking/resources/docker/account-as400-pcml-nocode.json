@@ -1,9 +1,0 @@
-{
-    "source-provider": {
-        "type": "HUB",
-        "hub": {
-            "project-name": "account-as400-pcml-microservice",
-            "api-key": "API_KEY"
-        }
-    }
-}

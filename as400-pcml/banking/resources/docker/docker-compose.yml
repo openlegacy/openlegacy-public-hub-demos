@@ -1,7 +1,0 @@
-account-as400-pcml:
-    image: openlegacy/as400-rpc:1.1.5
-    container_name: account-as400-pcml
-    ports:
-     - "8080:8080"
-    volumes:
-      - ./account-as400-pcml-nocode.json:/app/config/config.json

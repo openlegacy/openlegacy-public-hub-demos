@@ -1,0 +1,13 @@
+{
+  "id" : "908c0e64-a8fa-4ef5-8afb-cadb8ebbdc74",
+  "moduleName" : "account-as400-pcml",
+  "connectorName" : "as400-pcml",
+  "connectorVersion" : "1.34.0",
+  "connectionProperties" : {
+    "host" : "as400j.openlegacy.com",
+    "user" : "OPENLEGA1",
+    "password" : "'{cipher}0c3d82d1ec5dc8a2936ad4cdbffcebd1fd8df29217222b325f41bad3fcf4c52c'"
+  },
+  "type" : "as400Rpc",
+  "dtVersion" : "1.34.0"
+}

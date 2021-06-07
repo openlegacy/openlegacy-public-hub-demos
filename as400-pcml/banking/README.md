@@ -42,9 +42,9 @@ Enter the module folder
 Before creating the assets please save the resources folder into your module folder.
 
 - **Open Account**  
-  `add --source-path .\resources\OACTCS6X.pcml`
+  `ol add --source-path ..\resources\OACTCS6X.pcml`
 - **Get Account**  
-  `add --source-path .\resources\GACTCS6X.pcml`
+  `ol add --source-path ..\resources\GACTCS6X.pcml`
 
   ## Test the assets
 

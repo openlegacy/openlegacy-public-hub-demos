@@ -1,7 +1,7 @@
 # How to create IMS COBOL Accounts Hub Project 
 
 ## Pre-Requirements
-- OpenLegacy cli installed on your PC. 
+- OpenLegacy CLI installed on your PC. 
 - Java 11. 
 - OpenLegacy Hub account. 
 - Legacy sources from the resources folder:  
@@ -11,13 +11,13 @@
 
 `ol create module --connector  mf-ims-cobol   accounts-ims`
 
-Enter to the modue folder. 
+Enter the modue folder. 
 
 ## Test Connection
 
 `ol test connection --host 192.86.32.238 --port 9999 --group-name GROUP1 --data-store-name IVP1  --transaction-properties.commit-mode COMMIT_AND_SEND --username DEMO001 --password LEGACY --ssl-properties.is-ssl-enabled false`
 
-## Create The Assets
+## Create the Assets
 
 - **Open Account**  
       `ol add --program-path OACTIM8 -i .\OACTIM8.in.cpy -o .\OACTIM8.out.cpy`
@@ -27,9 +27,9 @@ Enter to the modue folder.
  
   
           
- ## Test The Assets
+ ## Test the Assets
  > **NOTE:**  
-> The test asset command must run from the module directory and you must be logged in to the hub.  
+> The test asset command must run from the module directory and you must be logged into the hub.  
 > `ol login -api-key <your api key>`
 
 ### Open Account 
@@ -47,7 +47,7 @@ Enter to the modue folder.
 
 2. Run `ol test asset gactim8`
 
-## Push Module To The Hub
+## Push Module to the Hub
 - Run `ol push module`
 
 ## Create Hub Project

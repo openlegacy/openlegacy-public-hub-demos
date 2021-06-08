@@ -82,8 +82,8 @@ Before creating the assets please save the resources folder into your module fol
 
 - Go to `resources\docker` and run the [docker-compose.yml](./resources/docker/docker-compose.yml) using the following command: `docker-compose up -d`
 
-## Swagger
+## OpenAPI
 
-- Go to http://localhost:8080/swagger.
+- Go to http://localhost:8080/openAPI.
 
 - Send the request to test the API

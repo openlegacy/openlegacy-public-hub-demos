@@ -24,7 +24,7 @@ ol test connection --host as400.openlegacy.com --user openlega1 --password openl
 > The test asset command must be run from the module directory and you must be logged into the hub.  
 > `ol login -api-key <your api key>`
 
-### Get All Policies
+### List All Policies
 
 1. Run `ol test asset pol2lst`
 

@@ -15,7 +15,7 @@
 ol test connection --host as400.openlegacy.com --user openlega1 --password openlega
 
 ## Create the assets
-- **Get All Policies**  
+- **List All Policies**  
 `ol add --source-path ../resources/POL2LST.cbl --program-path /QSYS.LIB/POLICY.LIB/POL2LST.PGM`
 - **Get One Policy**  
 `ol add --source-path ../resources/POL2GET.cbl --program-path /QSYS.LIB/POLICY.LIB/POL2GET.PGM`

@@ -1,4 +1,4 @@
-# How To Create CICS Banking Accounts Hub Project
+# How To Create Sybase Banking Accounts Hub Project
 
 ## Pre-Requirements
 

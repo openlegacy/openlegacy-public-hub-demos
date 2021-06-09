@@ -53,3 +53,13 @@ Enter the modue folder.
 ## Create Hub Project
 
 - `ol create project  accounts-ims-microservice --modules accounts-ims`
+
+## Run No Code
+Go to resources\docker account-ims-nocode.json and update the project name and API key.
+
+Go to resources\docker and run the docker-compose.yml using the following command: docker-compose up -d
+
+## OpenAPI
+Go to http://localhost:8080/openAPI.
+
+Send the request to test the API

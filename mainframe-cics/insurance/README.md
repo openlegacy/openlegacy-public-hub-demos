@@ -24,10 +24,10 @@ Enter to the module folder.
 Before creating the assets please save the resources folder into your module folder.
 
 - **Open Policy**  
-  ` ol add --program-path OPOLCS2 -i .\resources\OPOLCS2.in.cpy -o .\resources\OPOLCS2.out.cpy`
+  ` ol add --program-path OPOLCS2 -i ..\resources\OPOLCS2.in.cpy -o ..\resources\OPOLCS2.out.cpy`
 
 - **Get Policy**  
-  `ol add --program-path GPOLCS2 -i .\resources\GPOLCS2.in.cpy -o .\resources\GPOLCS2.out.cpy`
+  `ol add --program-path GPOLCS2 -i ..\resources\GPOLCS2.in.cpy -o ..\resources\GPOLCS2.out.cpy`
 
 
 ## Test the assets

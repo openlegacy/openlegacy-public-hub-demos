@@ -20,10 +20,10 @@ Enter the modue folder.
 ## Create the Assets
 
 - **Open Account**  
-      `ol add --program-path OACTIM8 -i .\OACTIM8.in.cpy -o .\OACTIM8.out.cpy`
+      `ol add --program-path OACTIM8 -i ..\OACTIM8.in.cpy -o ..\OACTIM8.out.cpy`
 
 - **Get Account**  
-    `ol add --program-path GACTIM8 -i .\GACTIM8.in.cpy -o .\GACTIM8.out.cpy`
+    `ol add --program-path GACTIM8 -i ..\GACTIM8.in.cpy -o ..\GACTIM8.out.cpy`
  
   
           

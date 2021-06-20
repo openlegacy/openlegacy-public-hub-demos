@@ -1,7 +1,9 @@
-policy-oracle:
-    image: openlegacy/oracle:1.1.5
-    container_name: policy-oracle
-    ports:
-     - "8080:8080"
-    volumes:
-      - ./policy-oracle-nocode.json:/app/config/config.json
+version: '3.3'
+services:
+  policy-oracle:
+      image: openlegacy/oracle:1.1.9
+      container_name: policy-oracle
+      ports:
+      - "8080:8080"
+      volumes:
+        - ./policy-oracle-nocode.json:/app/config/config.json

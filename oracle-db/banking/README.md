@@ -8,6 +8,10 @@
 - Oracle Stored Procedures From `Schema`: `OPENLEGACY_TEAM`, `Package`: `BANK_ACCOUNTS_PACKAGE`.<br/>
   `OPEN_ACCOUNT`, `GET_ACCOUNT`.
 
+## Log into the Hub
+
+`ol login -api-key <your api key>`
+
 ## Create a module
 
 `ol create module --connector oracle-db  account-oracle`
@@ -33,8 +37,8 @@ ol test connection --driver-class-name oracle.jdbc.driver.OracleDriver --url jdb
 ## Test the assets
 
 > **NOTE:**  
-> The test asset command must run from the module directory and you must be logged into the hub.  
-> `ol login -api-key <your api key>`
+> The test asset command must run from the module directory.  
+> 
 
 ### Open Account
 

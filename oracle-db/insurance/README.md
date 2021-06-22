@@ -6,6 +6,10 @@
 - Java 11.
 - OpenLegacy Hub account.
 
+## Log into the Hub
+
+`ol login -api-key <your api key>`
+
 ## Create a module
 
 `ol create module --connector oracle-db   policy-oracle`
@@ -26,8 +30,7 @@ ol test connection --driver-class-name oracle.jdbc.driver.OracleDriver --url jdb
 ## Test the assets
 
 > **NOTE:**  
-> The test asset command must be run from the module directory and you must be logged into the hub.  
-> `ol login -api-key <your api key>`
+> The test asset command must be run from the module directory.  
 
 ### Create Policy
 

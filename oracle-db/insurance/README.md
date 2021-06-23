@@ -27,8 +27,8 @@ ol test connection --driver-class-name oracle.jdbc.driver.OracleDriver --url jdb
 - **Create Policy**  
   `ol add --executable OPENLEGACY_TEAM.INSURANCE_POLICIES_PACKAGE.CREATE_POLICY`
   
-- **Get Policy** 
-  `ol add --executable OPENLEGACY_TEAM.INSURANCE_POLICIES_PACKAGE.GET_POLICY`
+- **Get Policy**
+`ol add --executable OPENLEGACY_TEAM.INSURANCE_POLICIES_PACKAGE.GET_POLICY`
 
 ## Test the assets
 

@@ -1,0 +1,8 @@
+customers-sap-rfc:
+    image: openlegacy/sap-rfc
+    container_name: customers-sap-rfc
+    ports:
+     - "8080:8080"
+    volumes:
+      - ./config.json:/app/config/config.json
+      - ~/.ol/cli/extra-classpath-resources:/usr/app/lib

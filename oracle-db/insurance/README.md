@@ -19,7 +19,7 @@ Enter to the module folder.
 ## Test connection
 
 ```
-ol test connection --driver-class-name oracle.jdbc.driver.OracleDriver --url jdbc:oracle:thin:@//oracle.openlegacy.com/ORCL --username openlegacy_team --password 'gp#6KN!yBiV' 
+ol test connection --driver-class-name oracle.jdbc.driver.OracleDriver --url jdbc:oracle:thin:@//oracle.openlegacy.com/ORCL --username openlegacy_team --password gp#6KN!yBiV 
 ```
 
 ## Create the assets

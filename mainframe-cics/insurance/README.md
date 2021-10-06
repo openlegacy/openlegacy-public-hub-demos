@@ -17,7 +17,7 @@ Enter to the module folder.
 
 ## Test connection
 
-` ol test connection --base-url mainframe.openlegacy.com --port 12345 --uri-map ol/demos`
+` ol test connection --base-url http://mainframe.openlegacy.com --port 12345 --uri-map ol/demos`
 
 ## Create the assets
 

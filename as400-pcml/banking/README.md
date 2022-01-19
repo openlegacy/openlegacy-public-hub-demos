@@ -34,7 +34,8 @@ Enter the module folder
 }
 
 ```
-
+</details>
+ 
 ## Test Connection
 
 `ol test connection --host as400j.openlegacy.com --user OPENLEGA1 --password OPENLEGA`

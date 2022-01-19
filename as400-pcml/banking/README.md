@@ -18,19 +18,22 @@ Enter the module folder
 
 ## Add externalLibs property to module.json
 
-1. Go to `module.json` and add the `externalLibs` property to the connection properties. This is needed to tell the jt400 which additional libraries to load.
+1. Go to `module.json` and add the `externalLibs` property to the connection properties inside the generated default profile. This is needed to tell the jt400 which additional libraries to load.
  <details>
   <summary>module.json</summary>
 
 ```
-       {
-           "connectionProperties" : {
-                 "externalLibs" : ["RMR2L1" ]
-           }
-       }
+{
+  "profiles": {
+    "$default": {
+      "externalLibs": ["RMR2L1"],
+       ...
+       ...
+    }
+  }
+}
 
-``` 
- </details>
+```
 
 ## Test Connection
 

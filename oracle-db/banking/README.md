@@ -21,7 +21,7 @@ Enter to the module folder.
 ## Test Connection
 
 ```
-ol test connection --url jdbc:oracle:thin:@//oracle.openlegacy.com/ORCL --username openlegacy_team --password gp#6KN!yBiV
+ol test connection --url jdbc:oracle:thin:@//oracle.openlegacy.com:15221/ORCL --username openlegacy_team --password gp#6KN!yBiV
 ```
 
 ## Create the assets

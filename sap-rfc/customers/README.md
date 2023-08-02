@@ -16,7 +16,7 @@
 ## Test Connection
 
 1. Enter the module folder: `cd customers-sap/` 
-2. Test connection to SAP: `ol test connection --hostname sap.openlegacy.com --user user02 --password open1234 --system-number 04 --client 800 --language en`
+2. Test connection to SAP: `ol test connection --hostname 91.195.162.68 --user user02 --password open1234 --system-number 04 --client 800 --language en`
 
 ## Create the asset
 
@@ -48,7 +48,7 @@
       }
     ```
 
-2.  Run `ol test asset bapi_customer_getlist`
+2.  Run `ol test asset bapi-customer-getlist`
 
 
 ## Push Module to the Hub

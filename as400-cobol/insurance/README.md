@@ -2,7 +2,7 @@
 
 ## Pre-Requirements
 - OpenLegacy CLI installed on your PC.
-- Java 11.
+- Java 17.
 - OpenLegacy Hub account.
 - Legacy sources from the resources folder:
 [POL2LST.cbl](./resources/POL2LST.cbl), [POL2GET.cbl](./resources/POL2GET.cbl).

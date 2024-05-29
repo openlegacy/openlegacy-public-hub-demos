@@ -12,7 +12,7 @@
 `ol create module --connector as400-cobol policy-as400-cobol`
 
 ## Test Connection 
-ol test connection --host as400.openlegacy.com --user openlega1 --password openlega
+ol test connection --host ibmi75.openlegacy.com --user openlega1 --password openlega
 
 ## Create the assets
 - **List All Policies**  

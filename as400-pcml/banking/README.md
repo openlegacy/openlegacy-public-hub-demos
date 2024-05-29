@@ -3,7 +3,7 @@
 ## Pre-Requirements
 
 - OpenLegacy CLI installed on your PC.
-- Java 11.
+- Java 17.
 - OpenLegacy Hub account.
 - Legacy sources from the resources folder:  
   [GACTCS6X.pcml](./resources/GACTCS6X.pcml) , [OACTCS6X.pcml](./resources/OACTCS6X.pcml).
@@ -38,7 +38,7 @@ Enter the module folder
  
 ## Test Connection
 
-`ol test connection --host as400j.openlegacy.com --user OPENLEGA1 --password OPENLEGA`
+`ol test connection --host ibmi75.openlegacy.com --user OPENLEGA1 --password OPENLEGA`
 
 
 ## Create the assets

@@ -38,7 +38,7 @@ Enter the module folder
  
 ## Test Connection
 
-`ol test connection --host ibmi75.openlegacy.com --user OPENLEGA1 --password OPENLEGA`
+`ol test connection --host ibmi75.openlegacy.com --user OPENLEGA1 --password OPENLEGA --external-libs RMR2L1`
 
 
 ## Create the assets

@@ -3,7 +3,7 @@
 # How To Create Z/OS DB2 Banking Accounts Module
 
 - Schema: `DEMO001`.
-- Procedures: `LACTSQL`, `GACTSQL`, `OACTSQL`, `UACTSQL`, `DACTSQL`, `RACTSQL`.
+- Procedures: ``GACTSQL`, `OACTSQL`.
 
 ## Pre-Requirements
 
@@ -24,7 +24,7 @@ Enter to the module folder.
 
 
 ```
-ol test connection --url jdbc:db2://mainframe.openlegacy.com:5035/DALLASB --username DEMO001 --password LEGACY --driver-class-name com.ibm.db2.jcc.DB2Driver
+ol test connection --url jdbc:db2://mainframe.openlegacy.com:5045/DALLASD --username DEMO001 --password LEGACY
 ```
 
 ## Create the assets

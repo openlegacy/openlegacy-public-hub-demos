@@ -3,7 +3,7 @@
 # How To Create Z/OS DB2 Insurance Module
 
 - Schema: `DEMO001`.
-- Procedures: `LPOLSQL`, `GPOLSQL`, `OPOLSQL`, `UPOLSQL`, `DPOLSQL`, `RPOLSQL`.
+- Procedures: ``GPOLSQL`, `OPOLSQL`.
 
 ## Pre-Requirements
 
@@ -23,7 +23,7 @@ Enter to the module folder.
 ## Test Connection
 
 ```
-ol test connection --url jdbc:db2://mainframe.openlegacy.com:5035/DALLASB --username DEMO001 --password LEGACY --driver-class-name com.ibm.db2.jcc.DB2Driver
+ol test connection --url jdbc:db2://mainframe.openlegacy.com:5045/DALLASD --username DEMO001 --password LEGACY
 ```
 
 ## Create the assets

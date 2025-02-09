@@ -15,7 +15,7 @@ Enter the modue folder.
 
 ## Test Connection
 
-`ol test connection --host 192.86.32.238 --port 9999 --group-name GROUP1 --data-store-name IVP1  --transaction-properties.commit-mode COMMIT_AND_SEND --username DEMO001 --password LEGACY --ssl-properties.is-ssl-enabled false`
+`ol test connection --host mainframe.openlegacy.com --port 9999 --group-name GROUP1 --data-store-name IVP1  --transaction-properties.commit-mode COMMIT_AND_SEND --username DEMO001 --password LEGACY --ssl-properties.is-ssl-enabled false`
 
 ## Create the Assets
 

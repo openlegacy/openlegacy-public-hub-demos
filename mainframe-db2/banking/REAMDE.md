@@ -8,7 +8,7 @@
 ## Pre-Requirements
 
 - OpenLegacy cli installed on your PC.
-- Copy DB2 driver and license jars: https://hub-support.openlegacy.com/en/article/db2-zoa-sp-connector
+- DB2 driver and license jars
 - Java 11.
 - OpenLegacy Hub account.
 

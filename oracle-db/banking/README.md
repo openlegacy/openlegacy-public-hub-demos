@@ -42,7 +42,7 @@ ol test connection --url jdbc:oracle:thin:@//oracle.openlegacy.com:15221/ORCL --
 
 ### Open Account
 
-1.  Go to `account-oracle/assets/open_account/test_data/case-1/in.json` and replace it with the following Json:
+1.  Go to `account-oracle/assets/open-account/test_data/case-1/in.json` and replace it with the following Json:
 
 - [open-account json](https://github.com/openlegacy/openlegacy-public-hub-demos/blob/master/oracle-db/banking/resources/test-json/open-account.json) 
 
@@ -50,7 +50,7 @@ ol test connection --url jdbc:oracle:thin:@//oracle.openlegacy.com:15221/ORCL --
 
 ### Get Account
 
-1.  Go to `account-oracle/assets/get_account/test_data/case-1/in.json` and replace it with the following Json:
+1.  Go to `account-oracle/assets/get-account/test_data/case-1/in.json` and replace it with the following Json:
 
 - [get-account json](https://github.com/openlegacy/openlegacy-public-hub-demos/blob/master/oracle-db/banking/resources/test-json/get-account.json) 
 

@@ -21,24 +21,24 @@ account-cics-jpディレクトリが作成されるので、そこへ移動す�
 以下のol コマンドを実行して、Connection Profileの作成と接続テストを行う。
 ` ol test connection --base-url http://mainframe.openlegacy.com --port 12344 --uri-map /OL/DEMOJP --code-page cp939`
 
-## Create the assets
+## アセットの作成
 
-Before creating the assets please save the resources folder into your module folder.
+アセットを作成する前に、resourcesフォルダーにあるCOBOLのソースファイルを、モジュールのディレクトリ下のresourcesディレクトリを作成して、そこにコピーすること。
 
-- **Open Single Account**  
+- **口座の開設**  
   `ol add --source-path .\resources\YYOACTJP.cbl --program-path YYOACTJP`
-- **Get Single Account**  
+- **口座情報の取得**  
   `ol add --source-path .\resources\YYGACTJP.cbl --program-path YYGACTJP`
-- **List Accounts**  
+- **口座リストの取得**  
   `ol add --source-path .\resources\YYLACTJP.cbl --program-path YYLACTJP`
-- **Delete Account**  
+- **口座の削除**  
   `ol add --source-path .\resources\YYDACTJP.cbl --program-path YYDACTJP`
 
 
-## Test the Assets
+## アセットのテスト
 
-> **NOTE:**  
-> The test asset command must be run from the module directory and you must be logged into the hub.  
+> **注意**  
+> ol test assetコマンドは必ずモジュールのディレクトリから実行すること。また以下のコマンドでOpenLegacy Hubにログインすること。  
 > `ol login -api-key <your api key>`
 
 ### List Account

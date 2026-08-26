@@ -1,0 +1,30 @@
+{
+    "dfhcommarea": {
+        "inPut": {
+            "actiAccountId": "12345678903"
+        },
+        "accountOut": {
+            "accountDetails": {
+                "actoAccountId": "",
+                "actoCustomerId": "",
+                "actoCustomerName": "",
+                "actoZipCode": "",
+                "actoAddress": "",
+                "actoIban": "",
+                "actoCntryCd": "",
+                "actoBnkId": "",
+                "actoBrnchId": 0,
+                "actoTypcd": "",
+                "actoTypeName": "",
+                "actoSubTypcd": "",
+                "actoTypeDescription": "",
+                "actoBalance": 0,
+                "actoCurrency": "",
+                "actoCrtDt": "",
+                "actoUpdtDt": "",
+                "actoLocked": ""
+            },
+            "rtMsg": ""
+        }
+    }
+}

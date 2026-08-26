@@ -8,7 +8,7 @@
 - Legacy sources from the resources folder:  
 - Docker
 - docker-compose
-- [YYOACTJP.cbl](./resources/YYOACTJP.cbl), [YYGACTJP.cbl](./resources/YYGACTJP.cbl).
+- [YYOACTJP.cbl](./resources/YYOACTJP.cbl), [YYGACTJP.cbl](./resources/YYGACTJP.cbl), [YYGACTJP.cbl](./resources/YYLACTJP.cbl), [YYGACTJP.cbl](./resources/YYDACTJP.cbl).
 
 ## Create a module
 

@@ -12,13 +12,13 @@
 
 ## Create a module
 
-`ol create module --connector mf-cics-cobol accounts-cics`
+`ol create module --connector mf-cics-cobol account-cics-jp`
 
 Enter the module folder.
 
 ## Test Connection
 
-` ol test connection --base-url http://mainframe.openlegacy.com --port 12344 --uri-map /ol/demos --codepage cp939`
+` ol test connection --base-url http://mainframe.openlegacy.com --port 12344 --uri-map /OL/DEMOJP --code-page cp939`
 
 ## Create the assets
 
@@ -27,7 +27,11 @@ Before creating the assets please save the resources folder into your module fol
 - **Open Single Account**  
   `ol add --source-path .\resources\YYOACTJP.cbl --program-path YYOACTJP`
 - **Get Single Account**  
-  `ol add -i .\resources\GACTCS9I.cpy -o .\resources\GACTCS9O.cpy --program-path GACTCS9`
+  `ol add --source-path .\resources\YYGACTJP.cbl --program-path YYGACTJP`
+- **List Accounts**  
+  `ol add --source-path .\resources\YYLACTJP.cbl --program-path YYLACTJP`
+- **Delete Account**  
+  `ol add --source-path .\resources\YYDACTJP.cbl --program-path YYDACTJP`
 
 
 ## Test the Assets
@@ -36,22 +40,40 @@ Before creating the assets please save the resources folder into your module fol
 > The test asset command must be run from the module directory and you must be logged into the hub.  
 > `ol login -api-key <your api key>`
 
+### List Account
+Run list-account first to see what account ids are in use.
+1.  Go to `accounts-cics\assets\yylactjp\test_data\case-1\in.json` and replace it with the following Json:
+
+- [mod-list-account.json](./testcases/mod-list-account.json)
+
+2.  Run `ol test asset yylactjp`
 
 ### Open Account
 
-1.  Go to `accounts-cics\assets\oactcs9\test_data\case-1\in.json` and replace it with the following Json:
+1.  Go to `accounts-cics\assets\yyoactjp\test_data\case-1\in.json` and replace it with the following Json:
 
-- [oactcs9 json](https://github.com/openlegacy/openlegacy-public-hub-demos/blob/master/mainframe-cics/banking/resources/test-json/oactcs9.json)
+- [mod-open-account.json](./testcases/mod-open-account.json)
+- And change the account id which is not same as any of the list of accounts returned List Account test.
 
-2.  Run `ol test asset oactcs9`
+2.  Run `ol test asset yyoactjp`
 
 ### Get Single Account
 
 1.  Go to `accounts-cics\assets\gactcs9\test_data\case-1\in.json` and replace it with the following Json:
 
-- [gactcs9 json](https://github.com/openlegacy/openlegacy-public-hub-demos/blob/master/mainframe-cics/banking/resources/test-json/gactcs9.json)
+- [mod-get-account.json](./testcases/mod-get-account.json)
+- And the change account id which is used in Open Account test in the previous step.
 
-2.  Run `ol test asset gactcs9`
+2.  Run `ol test asset yygactjp`
+
+### Delete Single Account
+
+1.  Go to `accounts-cics\assets\yydactjp\test_data\case-1\in.json` and replace it with the following Json:
+
+- [mod-delete-account.json](./testcases/mod-delete-account.json)
+- And the change account id which is used in Open Account test.
+
+2.  Run `ol test asset yydactjp`
 
 ## Push Module to the Hub
 
@@ -59,7 +81,7 @@ Before creating the assets please save the resources folder into your module fol
 
 ## Create Hub project
 
-- `ol create project accounts-cics-microservice --modules accounts-cics`
+- `ol create project accounts-cics-svc-jp --modules accounts-cics-jp`
 
 ## Run No Code
 

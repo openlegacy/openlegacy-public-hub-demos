@@ -1,0 +1,42 @@
+{
+  "dfhcommarea": {
+    "inPut": {
+      "actiAccountId": "12345678905",
+      "actiCustomerId": "1234567890123457",
+      "actiCustomerName": "佐藤　一郎",
+      "actiZipCode": "100-0014",
+      "actiAddress": "東京都千代田区永田町１－１－１",
+      "actiTypcd": "P",
+      "actiSubTypcd": "BC",
+      "actiCntryCd": "01",
+      "actiBnkId": "0001",
+      "actiBrnchId": 0,
+      "actiInitialDeposit": 10000,
+      "actiCurrency": ""
+    },
+    "accountOut": {
+      "outRecord": {
+        "actoAccountId": "",
+        "actoCustomerId": "",
+        "actoCustomerName": "",
+        "actoZipCode": "",
+        "actoAddress": "",
+        "actoIban": "",
+        "actoCntryCd": "",
+        "actoBnkId": "",
+        "actoBrnchId": 0,
+        "actoTypcd": "",
+        "actoTypeName": "",
+        "actoSubTypcd": "",
+        "actoTypeDescription": "",
+        "actoBalance": 0,
+        "actoCurrency": "",
+        "actoCrtDt": "",
+        "actoUpdtDt": "",
+        "actoLocked": ""
+      },
+      "rtcd": 0,
+      "rtMsg": ""
+    }
+  }
+}

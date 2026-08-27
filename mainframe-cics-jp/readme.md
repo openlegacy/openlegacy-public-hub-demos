@@ -7,7 +7,7 @@
 - Java 11。
 - OpenLegacy Hub アカウント。
 - TCP/IP ポート 12344でmainframe.openlegacy.comにアクセスできること。
-- COBOLのソースコードファイルがダウンロードされていること:
+- resourcesにあるCOBOLのソースコードファイルやdockerフォルダー下のファイルがダウンロードされていること:
 　 [YYOACTJP.cbl](./resources/YYOACTJP.cbl), [YYGACTJP.cbl](./resources/YYGACTJP.cbl), [YYGACTJP.cbl](./resources/YYLACTJP.cbl), [YYGACTJP.cbl](./resources/YYDACTJP.cbl).
 - Docker
 - docker-compose
@@ -83,19 +83,19 @@ account-cics-jpディレクトリが作成されるので、そこへ移動し�
 ## OpenLegacy Hubプロジェクトを作成します。
 
 - `ol create project accounts-cics-svc-jp --modules account-cics-jp`を実行します。
-  このとき指定したモジュールの情報からContractとメソッドフローを自動生成されます。
+  このとき指定したモジュールの情報からContractとメソッドフローが自動生成されます。
 
-## Run No Code
+## No Codeを実行
 
-- Go to `resources\docker` and update the [account-cics-nocode.json](./resources/docker/account-cics-nocode.json) with project name and API key.
+- `resources\docker`をオープンして[account-cics-nocode.json](./resources/docker/account-cics-nocode.json) をエディタでオープンしてproject name and API keyを置き換えます。
 
-- Go to `resources\docker` and run the [docker-compose.yaml](./resources/docker/docker-compose.yml) file using the following command: `docker-compose up -d`
+- `resources\docker` で、[docker-compose.yaml](./resources/docker/docker-compose.yml) を使った、`docker-compose up -d`コマンドを実行します。
 
 ## Open API
 
-- Go to http://localhost:8080/openapi.
+- ブラウザでhttp://localhost:8080/openapiをオープンすると、swaggerページがオープンされます。
 
-- Send the request to test the API
+- Sagger Pageで APIのテストを行います。
 
 
 # How To Create CICS Banking Accounts Hub Project which invoke Japanese account applications

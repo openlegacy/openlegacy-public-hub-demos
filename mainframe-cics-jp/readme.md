@@ -1,4 +1,4 @@
-# 日本語銀行口座CICSアプリケーションを呼び出すOpenLegacy Hubプロジェクトの作成手順
+# 銀行口座CICS日本語アプリケーションを呼び出すOpenLegacy Hubプロジェクトの作成手順
 (English guide follows Japanese guide)
 
 ## 要件
